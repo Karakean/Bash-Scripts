@@ -1,0 +1,56 @@
+.TH MILIONERZY 
+.SH NAZWA
+milionerzy.sh \- teleturniej
+.SH SKŁADNIA
+\fBmilionerzy.sh\fP [opcje] [\-h] [\-v]
+.SH OPIS
+.PP
+\fBMilionerzy\fP to teleturniej, w ktorym gracz odpowiada na serie
+dwunastu pytan, z ktorych kazde podbija stawke pieniezna o
+okreslona kwote. Gracz udziela odpowiedzi na pytanie wybierajac
+jedna z czterech dostepnych odpowiedzi. 
+Gra konczy sie w momencie, gdy gracz zle odpowie na pytanie,
+samodzielnie zrezygnuje z gry lub wygra milion.
+Skrypt wczytuje pytania z pliku tekstowego. I prezentuje je 
+uzytkownikowy z pomoca interfejsu wykonanego w zenity.
+Podczas gry dostepne sa trzy kola ratunkowe do jednorazowego uzytku:
+.SS "Pytanie do publicznosci"
+\fBPytanie do publicznosci\fP polega na zadaniu pytania publicznosci i pokazaniu
+wynikow procentowych jakie otrzymala kazda odpowiedz.
+.SS "Pol na pol"
+\fBPol na pol\fP usuwa polowe niepoprawnych odpowiedzi, pozostawiajac
+przy tym dwie, z ktorych jedna jest poprawna, sprawiajac,
+ze masz 50% szans na udzielenie poprawnej odpowiedzi.
+.SS
+\fBTelefon do przyjaciela\fP ukazuje odpowiedz, jaka udzielil przyjaciej
+po wykonanym do niego telefonie.
+.SH
+.B
+TUTORIAL
+Skrypt nalezy wlaczyc poprzez przejscie w konsoli do folderu
+w ktorym znajduje sie skrypt i wlaczenie go wpisujac
+w konsoli ./milionerzy.sh. Powinien wowczas byc widoczny
+interfejs aplikacji wraz z trescia pytania. Aby odpowiedziec
+na nie, nalezy wybrac jedna z odpowiedzi (A,B,C lub D) i
+wcisnac przycisk "OK". Jezeli odpowiedz jest niepoprawna,
+otrzymamy komunikat o naszej przegranej wraz ewentualna
+wygrana pieniezna. W przypadku, gdy odpowiedz byla poprawna,
+skrypt zapyta, czy gracz chce dalej kontynowac gre.
+W przypadku wybrania opcji "YES" przejdzie do nastepnego pytania.
+Jezeli zas wybrana zostanie opcja "NO", skrypt zakonczy
+dzialania informujac wczesniej o wygranej jaka udalo sie
+graczowi zdobyc. Jezeli gracz nie jest pewny odpowiedzi,
+moze skorzystac z jednego z kol ratunkowych opisanych w opisie
+skryptu, ale uzycie kazdego z nich jest jednorazowe.
+.SH
+.OP OPCJE
+.TP 
+\fB\-\-help\fP
+Wyświetla krótką instrukcję używania programu.
+.TP 
+\fB\-\-version\fP
+Wyświetla informację o wersji autorze. 
+.SH DODATKOWE PLIKI
+\fI/etc/pytania.txt\fP Plik z pytaniami
+.SH AUTOR
+Mikolaj Nowak s184865 2021
